@@ -37,3 +37,5 @@ x$v
 example(seq)
 help.search("multivariate normal")
 help.search("gamma distribution")
+
+# can push ?
