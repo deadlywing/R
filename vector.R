@@ -24,3 +24,13 @@ which(z*z > 8)
 m <- matrix(1:12,3,4)
 which(m %% 4 == 1, arr.ind = TRUE)
 example(which)
+# ifelse()
+x <- 1:10
+y <- ifelse(x %% 2 == 0,5,12)
+# names()
+x <- c(1,2,4)
+names(x)
+names(x) <- c('a','b','ab')
+names(x)
+x
+x['b']
