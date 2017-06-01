@@ -27,4 +27,14 @@ for (strs in c('g1','g2','g3')) {
   plot(funcs,0,1,add = TRUE)
 }
 
+# <<- and assign()
+f <- function(){
+  inc <- function(){x <<- x + 1}
+  x <- 3
+  inc()
+  return(x)
+}
 
+two <- function(u){
+  assign("u",2 * u,pos = .GlobalEnv)
+}
