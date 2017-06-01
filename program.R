@@ -38,3 +38,10 @@ f <- function(){
 two <- function(u){
   assign("u",2 * u,pos = .GlobalEnv)
 }
+
+m <- matrix(1:9,nrow = 3,byrow = TRUE)
+sweep(m,1,c(1,4,7),"+")
+
+# some math func:combn,sample
+sample(1:10,9)
+sample(1:10,9,replace = TRUE)
