@@ -26,3 +26,9 @@ qplot(carat, data = diamonds,facets = color ~ .,
       geom = 'histogram', binwidth = 0.1, xlim = c(0, 3))
 qplot(carat, ..density.., data = diamonds, facets = color ~ .,
       geom = "histogram", binwidth = 0.1, xlim = c(0, 3))
+
+# scatter
+library(ggplot2)
+qplot(displ, hwy, data = mpg, col = factor(cyl))
+
+qplot(displ, hwy, data = mpg, facets = . ~ year) + geom_smooth()
