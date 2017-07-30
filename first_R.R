@@ -38,5 +38,5 @@ example(seq)
 help.search("multivariate normal")
 help.search("gamma distribution")
 
-# can push ?
+# can push ??
 # can pull ?
